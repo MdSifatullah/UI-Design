@@ -10,11 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var btnSignIn: CustomButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        btnSignIn.designButton()
     }
 
-
+    @IBAction func onClickSignUp(_ sender: Any) {
+    }
+    
+    @IBAction func onClickSignIn(_ sender: Any) {
+    }
 }
 
