@@ -90,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="95.758928571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="Mic-mw-rys">
             <objects>
-                <viewController id="vdS-7y-KrA" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" id="vdS-7y-KrA" customClass="SignUpViewController" customModule="Travel_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="acm-l2-T5L">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,13 +105,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fgu-n5-sLZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="280.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="uOo-RK-8wp">
                                                         <rect key="frame" x="127.5" y="31" width="120" height="120"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="120" id="ERL-Wa-xtX"/>
-                                                            <constraint firstAttribute="width" constant="120" id="xLh-Pp-YOJ"/>
+                                                            <constraint firstAttribute="width" constant="120" id="uPv-H0-qBf"/>
+                                                            <constraint firstAttribute="height" constant="120" id="zgk-SM-HS5"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6D-Tp-kmO">
@@ -123,14 +123,15 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="uOo-RK-8wp" firstAttribute="centerX" secondItem="Fgu-n5-sLZ" secondAttribute="centerX" id="9ZQ-3D-dNp"/>
-                                                    <constraint firstItem="uOo-RK-8wp" firstAttribute="centerY" secondItem="Fgu-n5-sLZ" secondAttribute="centerY" multiplier="0.65" id="PDO-KE-S9h"/>
-                                                    <constraint firstItem="f6D-Tp-kmO" firstAttribute="centerX" secondItem="Fgu-n5-sLZ" secondAttribute="centerX" id="hN5-1T-fgf"/>
-                                                    <constraint firstItem="f6D-Tp-kmO" firstAttribute="top" secondItem="uOo-RK-8wp" secondAttribute="bottom" constant="15" id="q4e-ic-1E5"/>
+                                                    <constraint firstItem="f6D-Tp-kmO" firstAttribute="top" secondItem="uOo-RK-8wp" secondAttribute="bottom" constant="15" id="Y8N-i2-N2K"/>
+                                                    <constraint firstAttribute="height" constant="260" id="pMJ-mn-SBG"/>
+                                                    <constraint firstItem="f6D-Tp-kmO" firstAttribute="centerX" secondItem="Fgu-n5-sLZ" secondAttribute="centerX" id="uR6-rJ-fpI"/>
+                                                    <constraint firstItem="uOo-RK-8wp" firstAttribute="centerY" secondItem="Fgu-n5-sLZ" secondAttribute="centerY" multiplier="0.7" id="umM-nu-NB9"/>
+                                                    <constraint firstItem="uOo-RK-8wp" firstAttribute="centerX" secondItem="Fgu-n5-sLZ" secondAttribute="centerX" id="ztk-nQ-Zvd"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p0c-xb-KDF">
-                                                <rect key="frame" x="40" y="224" width="295" height="280.5"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p0c-xb-KDF" customClass="CustomView" customModule="Travel_App" customModuleProvider="target">
+                                                <rect key="frame" x="40" y="224" width="295" height="220"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qFP-0K-gql">
                                                         <rect key="frame" x="20" y="20" width="255" height="141.5"/>
@@ -198,75 +199,75 @@
                                                         </subviews>
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f41-1n-TMo" customClass="CustomButton" customModule="Travel_App" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="181.5" width="250" height="40"/>
+                                                        <rect key="frame" x="30" y="200" width="235" height="40"/>
                                                         <color key="backgroundColor" red="0.2390280068" green="0.58688759800000001" blue="0.67108201980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="40" id="J5K-d8-51E"/>
+                                                            <constraint firstAttribute="height" constant="40" id="eN8-Q6-Pp0"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                         <state key="normal" title="Sign Up">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ReC-Xp-ty8" customClass="CustomButton" customModule="Travel_App" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="240" width="250" height="40"/>
-                                                        <color key="backgroundColor" red="0.0" green="0.50329679250000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <state key="normal">
-                                                            <attributedString key="attributedTitle">
-                                                                <fragment content="Sign Up With">
-                                                                    <attributes>
-                                                                        <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <font key="NSFont" size="14" name=".SFNS-Regular"/>
-                                                                        <font key="NSOriginalFont" size="14" name=".SFNS-Regular"/>
-                                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                    </attributes>
-                                                                </fragment>
-                                                                <fragment content=" ">
-                                                                    <attributes>
-                                                                        <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <font key="NSFont" size="16" name=".SFNS-Regular"/>
-                                                                        <font key="NSOriginalFont" size="16" name=".SFNS-Regular"/>
-                                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                    </attributes>
-                                                                </fragment>
-                                                                <fragment content="Facebook">
-                                                                    <attributes>
-                                                                        <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <font key="NSFont" size="24" name="ArialNarrow-BoldItalic"/>
-                                                                        <font key="NSOriginalFont" metaFont="system" size="26"/>
-                                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                    </attributes>
-                                                                </fragment>
-                                                            </attributedString>
-                                                        </state>
-                                                    </button>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="ReC-Xp-ty8" firstAttribute="leading" secondItem="f41-1n-TMo" secondAttribute="leading" id="7qD-Pk-uQO"/>
-                                                    <constraint firstItem="ReC-Xp-ty8" firstAttribute="height" secondItem="f41-1n-TMo" secondAttribute="height" id="HiL-ZI-6c1"/>
-                                                    <constraint firstItem="f41-1n-TMo" firstAttribute="leading" secondItem="p0c-xb-KDF" secondAttribute="leading" constant="20" id="Lkh-BE-wTf"/>
-                                                    <constraint firstItem="ReC-Xp-ty8" firstAttribute="top" secondItem="f41-1n-TMo" secondAttribute="bottom" constant="18.5" id="URc-ck-j0k"/>
-                                                    <constraint firstAttribute="trailing" secondItem="f41-1n-TMo" secondAttribute="trailing" constant="25" id="dX8-or-Y3p"/>
-                                                    <constraint firstAttribute="trailing" secondItem="qFP-0K-gql" secondAttribute="trailing" constant="20" id="fRh-Q2-9XR"/>
-                                                    <constraint firstItem="ReC-Xp-ty8" firstAttribute="trailing" secondItem="f41-1n-TMo" secondAttribute="trailing" id="hcX-5i-1Tq"/>
-                                                    <constraint firstItem="qFP-0K-gql" firstAttribute="leading" secondItem="p0c-xb-KDF" secondAttribute="leading" constant="20" id="kg2-FH-qIU"/>
-                                                    <constraint firstItem="ReC-Xp-ty8" firstAttribute="width" secondItem="f41-1n-TMo" secondAttribute="width" id="ltm-Wo-45t"/>
-                                                    <constraint firstItem="f41-1n-TMo" firstAttribute="top" secondItem="qFP-0K-gql" secondAttribute="bottom" constant="20" id="p2p-g3-6FI"/>
-                                                    <constraint firstItem="qFP-0K-gql" firstAttribute="top" secondItem="p0c-xb-KDF" secondAttribute="top" constant="20" id="sBu-aV-HPW"/>
+                                                    <constraint firstItem="qFP-0K-gql" firstAttribute="leading" secondItem="p0c-xb-KDF" secondAttribute="leading" constant="20" id="9ib-cg-Pdo"/>
+                                                    <constraint firstItem="qFP-0K-gql" firstAttribute="top" secondItem="p0c-xb-KDF" secondAttribute="top" constant="20" id="BTH-eF-0Mb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="qFP-0K-gql" secondAttribute="trailing" constant="20" id="DMg-hw-Kph"/>
+                                                    <constraint firstAttribute="trailing" secondItem="f41-1n-TMo" secondAttribute="trailing" constant="30" id="Mpq-Mk-dVY"/>
+                                                    <constraint firstAttribute="height" constant="220" id="UJX-1p-TYx"/>
+                                                    <constraint firstAttribute="bottom" secondItem="f41-1n-TMo" secondAttribute="centerY" id="lHU-n8-YMu"/>
+                                                    <constraint firstItem="f41-1n-TMo" firstAttribute="leading" secondItem="p0c-xb-KDF" secondAttribute="leading" constant="30" id="zpl-na-pt5"/>
                                                 </constraints>
                                             </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ReC-Xp-ty8">
+                                                <rect key="frame" x="70" y="489" width="235" height="40"/>
+                                                <color key="backgroundColor" red="0.0" green="0.50329679250000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="3AJ-R5-leB"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Sign Up With">
+                                                            <attributes>
+                                                                <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <font key="NSFont" metaFont="system" size="14"/>
+                                                                <font key="NSOriginalFont" metaFont="system" size="14"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" ">
+                                                            <attributes>
+                                                                <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <font key="NSFont" metaFont="system" size="16"/>
+                                                                <font key="NSOriginalFont" metaFont="system" size="16"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="Facebook">
+                                                            <attributes>
+                                                                <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <font key="NSFont" size="24" name="ArialNarrow-BoldItalic"/>
+                                                                <font key="NSOriginalFont" metaFont="system" size="26"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="p0c-xb-KDF" firstAttribute="height" secondItem="Fgu-n5-sLZ" secondAttribute="height" id="2Vg-Rm-PnS"/>
-                                            <constraint firstAttribute="trailing" secondItem="Fgu-n5-sLZ" secondAttribute="trailing" id="AeQ-k2-w5g"/>
-                                            <constraint firstItem="p0c-xb-KDF" firstAttribute="top" secondItem="f6D-Tp-kmO" secondAttribute="bottom" constant="29" id="FP1-tJ-14c"/>
-                                            <constraint firstItem="Fgu-n5-sLZ" firstAttribute="height" secondItem="xpS-Je-9g3" secondAttribute="height" multiplier="0.45" id="L7O-R8-UUh"/>
-                                            <constraint firstAttribute="trailing" secondItem="p0c-xb-KDF" secondAttribute="trailing" constant="40" id="VVy-JB-whx"/>
-                                            <constraint firstItem="Fgu-n5-sLZ" firstAttribute="top" secondItem="xpS-Je-9g3" secondAttribute="top" id="b6B-bb-Vc5"/>
-                                            <constraint firstItem="p0c-xb-KDF" firstAttribute="leading" secondItem="xpS-Je-9g3" secondAttribute="leading" constant="40" id="kmj-Rg-V6u"/>
-                                            <constraint firstItem="Fgu-n5-sLZ" firstAttribute="leading" secondItem="xpS-Je-9g3" secondAttribute="leading" id="uil-j4-2Rj"/>
+                                            <constraint firstItem="p0c-xb-KDF" firstAttribute="top" secondItem="f6D-Tp-kmO" secondAttribute="bottom" constant="29" id="69W-qG-P24"/>
+                                            <constraint firstAttribute="trailing" secondItem="ReC-Xp-ty8" secondAttribute="trailing" constant="70" id="7dv-6h-lCE"/>
+                                            <constraint firstItem="ReC-Xp-ty8" firstAttribute="top" secondItem="p0c-xb-KDF" secondAttribute="bottom" constant="45" id="Cug-zn-73z"/>
+                                            <constraint firstItem="p0c-xb-KDF" firstAttribute="leading" secondItem="xpS-Je-9g3" secondAttribute="leading" constant="40" id="Gis-at-jFQ"/>
+                                            <constraint firstItem="ReC-Xp-ty8" firstAttribute="leading" secondItem="xpS-Je-9g3" secondAttribute="leading" constant="70" id="VD3-bf-P4g"/>
+                                            <constraint firstAttribute="trailing" secondItem="p0c-xb-KDF" secondAttribute="trailing" constant="40" id="WMJ-5M-UJR"/>
+                                            <constraint firstItem="Fgu-n5-sLZ" firstAttribute="top" secondItem="xpS-Je-9g3" secondAttribute="top" id="a1P-o8-BSc"/>
+                                            <constraint firstAttribute="trailing" secondItem="Fgu-n5-sLZ" secondAttribute="trailing" id="seI-Lk-yOK"/>
+                                            <constraint firstItem="Fgu-n5-sLZ" firstAttribute="leading" secondItem="xpS-Je-9g3" secondAttribute="leading" id="xXg-ch-cLg"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -289,6 +290,12 @@
                         <viewLayoutGuide key="safeArea" id="Ci2-hu-2qg"/>
                     </view>
                     <navigationItem key="navigationItem" id="OaD-ps-UXE"/>
+                    <connections>
+                        <outlet property="btnSignUpFB" destination="ReC-Xp-ty8" id="7Wp-7v-ZNU"/>
+                        <outlet property="txtFieldEmail" destination="JpX-oH-NfN" id="abF-jP-iVn"/>
+                        <outlet property="txtFieldFullName" destination="9vq-EP-tVg" id="BEl-WZ-Z77"/>
+                        <outlet property="txtFieldPassword" destination="Nk4-mn-d5W" id="0bk-sl-Gvi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bQi-fd-9ml" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
