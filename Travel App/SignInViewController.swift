@@ -17,8 +17,8 @@ class SignInViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        txtFieldName.addRightView(image: #imageLiteral(resourceName: "outline_sentiment_satisfied_alt_black_18dp"))
-        TxtFieldPass.addRightView(image: #imageLiteral(resourceName: "outline_visibility_black_18dp"), isSecure: true)
+        txtFieldName.addRightView(image: #imageLiteral(resourceName: "baseline_supervised_user_circle_black_18dp"))
+        TxtFieldPass.addRightView(image: #imageLiteral(resourceName: "baseline_visibility_black_18dp"), isSecure: true)
     }
 
 }

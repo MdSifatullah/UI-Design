@@ -17,8 +17,8 @@ extension UITextField {
         if isSecure == true {
             let button = UIButton(frame: imageView.frame)
             
-            button.setImage(#imageLiteral(resourceName: "outline_visibility_black_18dp"), for: .normal)
-            button.setImage(#imageLiteral(resourceName: "outline_visibility_off_black_18dp"), for: .selected)
+            button.setImage(#imageLiteral(resourceName: "baseline_visibility_black_18dp"), for: .normal)
+            button.setImage(#imageLiteral(resourceName: "baseline_visibility_off_black_18dp"), for: .selected)
             button.addTarget(self, action: #selector(onClick), for: .touchUpInside)
             button.isSelected = true
             rightView = button

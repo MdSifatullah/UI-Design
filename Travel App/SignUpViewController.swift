@@ -17,9 +17,9 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         btnSignUpFB.designButton(borderWidth: 0, borderColor: UIColor.clear)
-        txtFieldFullName.addRightView(image: #imageLiteral(resourceName: "outline_sentiment_satisfied_alt_black_18dp"))
-        txtFieldEmail.addRightView(image: #imageLiteral(resourceName: "outline_email_black_18dp"))
-        txtFieldPassword.addRightView(image: #imageLiteral(resourceName: "outline_visibility_black_18dp"), isSecure: true)
+        txtFieldFullName.addRightView(image: #imageLiteral(resourceName: "baseline_supervised_user_circle_black_18dp"))
+        txtFieldEmail.addRightView(image: #imageLiteral(resourceName: "baseline_email_black_18dp"))
+        txtFieldPassword.addRightView(image: #imageLiteral(resourceName: "baseline_visibility_black_18dp"), isSecure: true)
         
         // Do any additional setup after loading the view.
     }

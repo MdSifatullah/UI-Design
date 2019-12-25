@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B14459E23B2418C0040EA5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B14459D23B2418C0040EA5E /* Assets.xcassets */; };
 		0B6B7F4523B0FF9D00F2B960 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6B7F4423B0FF9D00F2B960 /* AppDelegate.swift */; };
 		0B6B7F4723B0FF9D00F2B960 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6B7F4623B0FF9D00F2B960 /* SceneDelegate.swift */; };
 		0B6B7F4923B0FF9D00F2B960 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6B7F4823B0FF9D00F2B960 /* ViewController.swift */; };
@@ -16,12 +17,12 @@
 		0B6B7F5C23B1130D00F2B960 /* btnExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6B7F5B23B1130D00F2B960 /* btnExtension.swift */; };
 		72070A5823B1C4EE005308B8 /* ViewCustomDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72070A5723B1C4EE005308B8 /* ViewCustomDesign.swift */; };
 		72070A5A23B1D4A6005308B8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72070A5923B1D4A6005308B8 /* SignUpViewController.swift */; };
-		7280DCCE23B1DE9400EA4027 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7280DCCD23B1DE9400EA4027 /* Assets.xcassets */; };
 		7280DCD023B1DF6D00EA4027 /* DesignIconExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7280DCCF23B1DF6D00EA4027 /* DesignIconExtension.swift */; };
 		7280DCD223B208DE00EA4027 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7280DCD123B208DE00EA4027 /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B14459D23B2418C0040EA5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/Assets.xcassets; sourceTree = "<group>"; };
 		0B6B7F4123B0FF9D00F2B960 /* Travel App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Travel App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B6B7F4423B0FF9D00F2B960 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B6B7F4623B0FF9D00F2B960 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,7 +34,6 @@
 		0B6B7F5B23B1130D00F2B960 /* btnExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = btnExtension.swift; sourceTree = "<group>"; };
 		72070A5723B1C4EE005308B8 /* ViewCustomDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCustomDesign.swift; sourceTree = "<group>"; };
 		72070A5923B1D4A6005308B8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		7280DCCD23B1DE9400EA4027 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../Downloads/UI-Design/Travel App/Assets.xcassets"; sourceTree = "<group>"; };
 		7280DCCF23B1DF6D00EA4027 /* DesignIconExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignIconExtension.swift; sourceTree = "<group>"; };
 		7280DCD123B208DE00EA4027 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,7 +73,7 @@
 				0B6B7F4623B0FF9D00F2B960 /* SceneDelegate.swift */,
 				0B6B7F4823B0FF9D00F2B960 /* ViewController.swift */,
 				0B6B7F4A23B0FF9D00F2B960 /* Main.storyboard */,
-				7280DCCD23B1DE9400EA4027 /* Assets.xcassets */,
+				0B14459D23B2418C0040EA5E /* Assets.xcassets */,
 				0B6B7F4F23B0FFA000F2B960 /* LaunchScreen.storyboard */,
 				0B6B7F5223B0FFA000F2B960 /* Info.plist */,
 				0B6B7F5823B10EF600F2B960 /* CustomButton.swift */,
@@ -152,7 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B6B7F5123B0FFA000F2B960 /* LaunchScreen.storyboard in Resources */,
-				7280DCCE23B1DE9400EA4027 /* Assets.xcassets in Resources */,
+				0B14459E23B2418C0040EA5E /* Assets.xcassets in Resources */,
 				0B6B7F4C23B0FF9D00F2B960 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
