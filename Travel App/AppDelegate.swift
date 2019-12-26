@@ -11,10 +11,19 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let accessToken = UserDefaults.standard.value(forKey: "accessToken")
+        
+        if accessToken != nil{
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let vc = storyboard.instantiateViewController(withIdentifier: "TabBarViewController") as? TabBarViewController
+                UIApplication.shared.windows.first?.rootViewController = vc
+                              UIApplication.shared.windows.first?.makeKeyAndVisible()
+        }
         return true
     }
 

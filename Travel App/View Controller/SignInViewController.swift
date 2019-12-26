@@ -17,8 +17,13 @@ class SignInViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        txtFieldName.addRightView(image: #imageLiteral(resourceName: "baseline_supervised_user_circle_black_18dp"))
+        txtFieldName.addRightView(image: #imageLiteral(resourceName: "baseline_person_outline_black_18dp"))
         TxtFieldPass.addRightView(image: #imageLiteral(resourceName: "baseline_visibility_black_18dp"), isSecure: true)
     }
 
+    @IBAction func SignInBtn(_ sender: Any) {
+        //UserDefaults.standard.set("LogedIn", forKey: "accessToken")
+        changeRoot()
+        
+    }
 }

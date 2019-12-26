@@ -9,7 +9,8 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
-
+    
+    
     @IBOutlet weak var btnSignUpFB: UIButton!
     @IBOutlet weak var txtFieldFullName: UITextField!
     @IBOutlet weak var txtFieldEmail: UITextField!
@@ -17,7 +18,7 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         btnSignUpFB.designButton(borderWidth: 0, borderColor: UIColor.clear)
-        txtFieldFullName.addRightView(image: #imageLiteral(resourceName: "baseline_supervised_user_circle_black_18dp"))
+        txtFieldFullName.addRightView(image: #imageLiteral(resourceName: "baseline_person_outline_black_18dp"))
         txtFieldEmail.addRightView(image: #imageLiteral(resourceName: "baseline_email_black_18dp"))
         txtFieldPassword.addRightView(image: #imageLiteral(resourceName: "baseline_visibility_black_18dp"), isSecure: true)
         

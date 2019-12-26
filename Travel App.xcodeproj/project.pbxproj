@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B0D0B5223B4A75600F8F92B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0D0B5123B4A75600F8F92B /* HomeViewController.swift */; };
 		0B14459E23B2418C0040EA5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B14459D23B2418C0040EA5E /* Assets.xcassets */; };
+		0B60934423B47B1D00C69D89 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B60934323B47B1D00C69D89 /* TabBarViewController.swift */; };
+		0B60934623B47CD300C69D89 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B60934523B47CD300C69D89 /* ViewControllerExtension.swift */; };
 		0B6B7F4523B0FF9D00F2B960 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6B7F4423B0FF9D00F2B960 /* AppDelegate.swift */; };
 		0B6B7F4723B0FF9D00F2B960 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6B7F4623B0FF9D00F2B960 /* SceneDelegate.swift */; };
 		0B6B7F4923B0FF9D00F2B960 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6B7F4823B0FF9D00F2B960 /* ViewController.swift */; };
@@ -22,7 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B0D0B5123B4A75600F8F92B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0B14459D23B2418C0040EA5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/Assets.xcassets; sourceTree = "<group>"; };
+		0B60934323B47B1D00C69D89 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		0B60934523B47CD300C69D89 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		0B6B7F4123B0FF9D00F2B960 /* Travel App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Travel App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B6B7F4423B0FF9D00F2B960 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B6B7F4623B0FF9D00F2B960 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +55,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B60934023B47A2F00C69D89 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				72070A5923B1D4A6005308B8 /* SignUpViewController.swift */,
+				7280DCD123B208DE00EA4027 /* SignInViewController.swift */,
+				0B60934323B47B1D00C69D89 /* TabBarViewController.swift */,
+				0B0D0B5123B4A75600F8F92B /* HomeViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		0B60934123B47A4F00C69D89 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0B6B7F3823B0FF9C00F2B960 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +92,8 @@
 		0B6B7F4323B0FF9D00F2B960 /* Travel App */ = {
 			isa = PBXGroup;
 			children = (
+				0B60934123B47A4F00C69D89 /* Model */,
+				0B60934023B47A2F00C69D89 /* View Controller */,
 				0B6B7F5A23B112B100F2B960 /* Extension */,
 				0B6B7F4423B0FF9D00F2B960 /* AppDelegate.swift */,
 				0B6B7F4623B0FF9D00F2B960 /* SceneDelegate.swift */,
@@ -76,11 +102,6 @@
 				0B14459D23B2418C0040EA5E /* Assets.xcassets */,
 				0B6B7F4F23B0FFA000F2B960 /* LaunchScreen.storyboard */,
 				0B6B7F5223B0FFA000F2B960 /* Info.plist */,
-				0B6B7F5823B10EF600F2B960 /* CustomButton.swift */,
-				72070A5723B1C4EE005308B8 /* ViewCustomDesign.swift */,
-				72070A5923B1D4A6005308B8 /* SignUpViewController.swift */,
-				7280DCCF23B1DF6D00EA4027 /* DesignIconExtension.swift */,
-				7280DCD123B208DE00EA4027 /* SignInViewController.swift */,
 			);
 			path = "Travel App";
 			sourceTree = "<group>";
@@ -88,7 +109,11 @@
 		0B6B7F5A23B112B100F2B960 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				7280DCCF23B1DF6D00EA4027 /* DesignIconExtension.swift */,
 				0B6B7F5B23B1130D00F2B960 /* btnExtension.swift */,
+				72070A5723B1C4EE005308B8 /* ViewCustomDesign.swift */,
+				0B6B7F5823B10EF600F2B960 /* CustomButton.swift */,
+				0B60934523B47CD300C69D89 /* ViewControllerExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -171,8 +196,11 @@
 				7280DCD023B1DF6D00EA4027 /* DesignIconExtension.swift in Sources */,
 				7280DCD223B208DE00EA4027 /* SignInViewController.swift in Sources */,
 				0B6B7F4523B0FF9D00F2B960 /* AppDelegate.swift in Sources */,
+				0B60934623B47CD300C69D89 /* ViewControllerExtension.swift in Sources */,
 				72070A5823B1C4EE005308B8 /* ViewCustomDesign.swift in Sources */,
+				0B60934423B47B1D00C69D89 /* TabBarViewController.swift in Sources */,
 				0B6B7F4723B0FF9D00F2B960 /* SceneDelegate.swift in Sources */,
+				0B0D0B5223B4A75600F8F92B /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

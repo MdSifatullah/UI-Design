@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wvZ-Ee-Ehn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hj8-Fc-YCe">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -31,13 +31,12 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="Zpl-Xb-Qve">
                                 <rect key="frame" x="40" y="396.5" width="295" height="107"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHz-HG-6kA" customClass="CustomButton" customModule="Travel_App" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHz-HG-6kA" customClass="CustomButton" customModule="Travel_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="42"/>
-                                        <color key="backgroundColor" red="0.25624403359999998" green="0.58700138329999996" blue="0.67107337710000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.012496734969999999" green="0.83831179140000001" blue="0.65497487779999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="hI3-cC-cga"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                         <state key="normal" title="Sign Up">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
@@ -201,7 +200,7 @@
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f41-1n-TMo" customClass="CustomButton" customModule="Travel_App" customModuleProvider="target">
                                                         <rect key="frame" x="30" y="200" width="235" height="40"/>
-                                                        <color key="backgroundColor" red="0.2390280068" green="0.58688759800000001" blue="0.67108201980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.012496734969999999" green="0.83831179140000001" blue="0.65497487779999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="eN8-Q6-Pp0"/>
                                                         </constraints>
@@ -438,7 +437,7 @@
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5o0-Ly-yGu" customClass="CustomButton" customModule="Travel_App" customModuleProvider="target">
                                                         <rect key="frame" x="30" y="140" width="235" height="40"/>
-                                                        <color key="backgroundColor" red="0.2390280068" green="0.58688759800000001" blue="0.67108201980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.012496734969999999" green="0.83831179140000001" blue="0.65497487779999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="BDr-Qb-xO6"/>
                                                         </constraints>
@@ -446,6 +445,9 @@
                                                         <state key="normal" title="Sign In">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="SignInBtn:" destination="cdo-DY-EHm" eventType="touchUpInside" id="sqQ-Tq-h96"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -559,14 +561,125 @@
             </objects>
             <point key="canvasLocation" x="4440.8000000000002" y="2550.6746626686659"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="8sF-nq-ajr">
             <objects>
-                <viewController id="kEv-Zp-9ja" sceneMemberID="viewController">
+                <viewController id="kEv-Zp-9ja" customClass="HomeViewController" customModule="Travel_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Xy-d4-7rG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Udb-eb-Sin">
+                                <rect key="frame" x="0.0" y="44" width="375" height="260"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Will Travel By?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhZ-Ej-Mo8">
+                                        <rect key="frame" x="88" y="115.5" width="199" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                        <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="hhZ-Ej-Mo8" firstAttribute="centerX" secondItem="Udb-eb-Sin" secondAttribute="centerX" id="1DC-7L-mdV"/>
+                                    <constraint firstItem="hhZ-Ej-Mo8" firstAttribute="centerY" secondItem="Udb-eb-Sin" secondAttribute="centerY" id="Xzo-DH-MBb"/>
+                                    <constraint firstAttribute="height" constant="260" id="kTI-E5-GWR"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="roc-Yo-Xd0" customClass="CustomView" customModule="Travel_App" customModuleProvider="target">
+                                <rect key="frame" x="30" y="277" width="145.5" height="125.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plane" translatesAutoresizingMaskIntoConstraints="NO" id="jQ5-MU-wVZ">
+                                        <rect key="frame" x="45.5" y="16.5" width="55" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="8h4-RZ-sFY"/>
+                                            <constraint firstAttribute="height" constant="55" id="Mck-7d-QVC"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plane" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93p-JY-uw3">
+                                        <rect key="frame" x="51" y="76.5" width="44" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="jQ5-MU-wVZ" firstAttribute="centerX" secondItem="roc-Yo-Xd0" secondAttribute="centerX" id="M4L-Na-L8W"/>
+                                    <constraint firstItem="93p-JY-uw3" firstAttribute="top" secondItem="jQ5-MU-wVZ" secondAttribute="bottom" constant="5" id="Ro5-fF-LUH"/>
+                                    <constraint firstItem="jQ5-MU-wVZ" firstAttribute="centerY" secondItem="roc-Yo-Xd0" secondAttribute="centerY" multiplier="0.7" id="XrD-xX-Qd1"/>
+                                    <constraint firstItem="93p-JY-uw3" firstAttribute="centerX" secondItem="roc-Yo-Xd0" secondAttribute="centerX" id="kyh-qN-ZZb"/>
+                                    <constraint firstAttribute="width" secondItem="roc-Yo-Xd0" secondAttribute="height" multiplier="147:127" id="pYN-4w-jPC"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="358-Oh-jwX" customClass="CustomView" customModule="Travel_App" customModuleProvider="target">
+                                <rect key="frame" x="199.5" y="277" width="145.5" height="125.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="train" translatesAutoresizingMaskIntoConstraints="NO" id="FXb-NN-rAh">
+                                        <rect key="frame" x="45.5" y="16.5" width="55" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="XM8-VN-UUo"/>
+                                            <constraint firstAttribute="width" constant="55" id="u4R-gh-TjB"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Train" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0Z-wg-bAx">
+                                        <rect key="frame" x="53.5" y="76.5" width="39" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="r0Z-wg-bAx" firstAttribute="top" secondItem="FXb-NN-rAh" secondAttribute="bottom" constant="5" id="8Eo-gZ-OLF"/>
+                                    <constraint firstItem="FXb-NN-rAh" firstAttribute="centerY" secondItem="358-Oh-jwX" secondAttribute="centerY" multiplier="0.7" id="T9h-0u-y4f"/>
+                                    <constraint firstItem="FXb-NN-rAh" firstAttribute="centerX" secondItem="358-Oh-jwX" secondAttribute="centerX" id="b8r-yb-Mp4"/>
+                                    <constraint firstItem="r0Z-wg-bAx" firstAttribute="centerX" secondItem="358-Oh-jwX" secondAttribute="centerX" id="qp3-C3-SrZ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xf1-zW-GaL" customClass="CustomView" customModule="Travel_App" customModuleProvider="target">
+                                <rect key="frame" x="30" y="420.5" width="315" height="126"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plane" translatesAutoresizingMaskIntoConstraints="NO" id="NUA-CO-vcL">
+                                        <rect key="frame" x="127.5" y="14" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="1ky-GT-O2M"/>
+                                            <constraint firstAttribute="width" constant="60" id="3d7-yQ-t2D"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Car" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDZ-Uw-8W2">
+                                        <rect key="frame" x="143.5" y="79" width="28" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="rDZ-Uw-8W2" firstAttribute="centerX" secondItem="Xf1-zW-GaL" secondAttribute="centerX" id="5DG-of-ftP"/>
+                                    <constraint firstItem="NUA-CO-vcL" firstAttribute="centerX" secondItem="Xf1-zW-GaL" secondAttribute="centerX" id="F7S-V1-pao"/>
+                                    <constraint firstItem="NUA-CO-vcL" firstAttribute="centerY" secondItem="Xf1-zW-GaL" secondAttribute="centerY" multiplier="0.7" id="e81-q3-dF0"/>
+                                    <constraint firstItem="rDZ-Uw-8W2" firstAttribute="top" secondItem="NUA-CO-vcL" secondAttribute="bottom" constant="5" id="red-dV-tCD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="358-Oh-jwX" firstAttribute="width" secondItem="roc-Yo-Xd0" secondAttribute="width" id="96U-Pk-G92"/>
+                            <constraint firstItem="roc-Yo-Xd0" firstAttribute="top" secondItem="PCs-li-RZ5" secondAttribute="top" constant="233" id="Bzk-VN-TPd"/>
+                            <constraint firstItem="PCs-li-RZ5" firstAttribute="trailing" secondItem="Udb-eb-Sin" secondAttribute="trailing" id="KeT-J2-iN4"/>
+                            <constraint firstItem="Xf1-zW-GaL" firstAttribute="height" secondItem="roc-Yo-Xd0" secondAttribute="height" id="TQd-vU-pPH"/>
+                            <constraint firstItem="358-Oh-jwX" firstAttribute="leading" secondItem="roc-Yo-Xd0" secondAttribute="trailing" constant="24" id="ThG-XZ-7kO"/>
+                            <constraint firstItem="Xf1-zW-GaL" firstAttribute="trailing" secondItem="358-Oh-jwX" secondAttribute="trailing" id="Ull-tV-zQ4"/>
+                            <constraint firstItem="roc-Yo-Xd0" firstAttribute="leading" secondItem="PCs-li-RZ5" secondAttribute="leading" constant="30" id="WOd-h2-j0a"/>
+                            <constraint firstItem="Xf1-zW-GaL" firstAttribute="top" secondItem="roc-Yo-Xd0" secondAttribute="bottom" constant="18" id="bGP-L9-FRa"/>
+                            <constraint firstItem="358-Oh-jwX" firstAttribute="height" secondItem="roc-Yo-Xd0" secondAttribute="height" id="g9V-ER-o5r"/>
+                            <constraint firstItem="Udb-eb-Sin" firstAttribute="top" secondItem="PCs-li-RZ5" secondAttribute="top" id="mqQ-if-abZ"/>
+                            <constraint firstItem="PCs-li-RZ5" firstAttribute="trailing" secondItem="358-Oh-jwX" secondAttribute="trailing" constant="30" id="pbo-hi-wYx"/>
+                            <constraint firstItem="Udb-eb-Sin" firstAttribute="leading" secondItem="PCs-li-RZ5" secondAttribute="leading" id="qTT-IW-BBW"/>
+                            <constraint firstItem="Xf1-zW-GaL" firstAttribute="leading" secondItem="roc-Yo-Xd0" secondAttribute="leading" id="tbg-Pt-kKI"/>
+                            <constraint firstItem="358-Oh-jwX" firstAttribute="top" secondItem="PCs-li-RZ5" secondAttribute="top" constant="233" id="vMp-VZ-V2I"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PCs-li-RZ5"/>
                     </view>
                     <navigationItem key="navigationItem" id="Fsh-BV-A9m"/>
@@ -591,10 +704,11 @@
             </objects>
             <point key="canvasLocation" x="4440.8000000000002" y="1867.9160419790107"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="pdh-1Z-cof">
             <objects>
-                <tabBarController id="wvZ-Ee-Ehn" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarViewController" id="wvZ-Ee-Ehn" customClass="TabBarViewController" customModule="Travel_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="jVY-ay-iqk"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zV2-0X-6Kg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -615,7 +729,7 @@
         <scene sceneID="xg8-Rx-T0b">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="elW-FL-hhN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="person.badge.plus" catalog="system" id="zlg-E8-qYU"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="baseline_person_outline_black_18dp" id="zlg-E8-qYU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="x4g-i9-Ivy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -689,11 +803,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="baseline_person_outline_black_18dp" width="18" height="18"/>
         <image name="briefcase" catalog="system" width="64" height="50"/>
         <image name="briefcase.fill" catalog="system" width="64" height="50"/>
         <image name="house" catalog="system" width="64" height="54"/>
-        <image name="logo" width="1181" height="1181"/>
+        <image name="logo" width="640" height="640"/>
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>
-        <image name="person.badge.plus" catalog="system" width="64" height="58"/>
+        <image name="plane" width="512" height="512"/>
+        <image name="train" width="271" height="186"/>
     </resources>
 </document>
