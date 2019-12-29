@@ -18,6 +18,8 @@
 		0B6B7F5123B0FFA000F2B960 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B6B7F4F23B0FFA000F2B960 /* LaunchScreen.storyboard */; };
 		0B6B7F5923B10EF600F2B960 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6B7F5823B10EF600F2B960 /* CustomButton.swift */; };
 		0B6B7F5C23B1130D00F2B960 /* btnExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6B7F5B23B1130D00F2B960 /* btnExtension.swift */; };
+		0BC1BAD323B8810F00550FB2 /* FlightResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC1BAD223B8810F00550FB2 /* FlightResultViewController.swift */; };
+		0BC1BAD523B8AE5200550FB2 /* ToursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC1BAD423B8AE5200550FB2 /* ToursViewController.swift */; };
 		0BC9264C23B792C500B377A2 /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC9264B23B792C500B377A2 /* TicketViewController.swift */; };
 		72070A5823B1C4EE005308B8 /* ViewCustomDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72070A5723B1C4EE005308B8 /* ViewCustomDesign.swift */; };
 		72070A5A23B1D4A6005308B8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72070A5923B1D4A6005308B8 /* SignUpViewController.swift */; };
@@ -39,6 +41,8 @@
 		0B6B7F5223B0FFA000F2B960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B6B7F5823B10EF600F2B960 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		0B6B7F5B23B1130D00F2B960 /* btnExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = btnExtension.swift; sourceTree = "<group>"; };
+		0BC1BAD223B8810F00550FB2 /* FlightResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightResultViewController.swift; sourceTree = "<group>"; };
+		0BC1BAD423B8AE5200550FB2 /* ToursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursViewController.swift; sourceTree = "<group>"; };
 		0BC9264B23B792C500B377A2 /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
 		72070A5723B1C4EE005308B8 /* ViewCustomDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCustomDesign.swift; sourceTree = "<group>"; };
 		72070A5923B1D4A6005308B8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +69,8 @@
 				0B60934323B47B1D00C69D89 /* TabBarViewController.swift */,
 				0B0D0B5123B4A75600F8F92B /* HomeViewController.swift */,
 				0BC9264B23B792C500B377A2 /* TicketViewController.swift */,
+				0BC1BAD223B8810F00550FB2 /* FlightResultViewController.swift */,
+				0BC1BAD423B8AE5200550FB2 /* ToursViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -196,7 +202,9 @@
 				72070A5A23B1D4A6005308B8 /* SignUpViewController.swift in Sources */,
 				0BC9264C23B792C500B377A2 /* TicketViewController.swift in Sources */,
 				0B6B7F5C23B1130D00F2B960 /* btnExtension.swift in Sources */,
+				0BC1BAD323B8810F00550FB2 /* FlightResultViewController.swift in Sources */,
 				0B6B7F4923B0FF9D00F2B960 /* ViewController.swift in Sources */,
+				0BC1BAD523B8AE5200550FB2 /* ToursViewController.swift in Sources */,
 				7280DCD023B1DF6D00EA4027 /* DesignIconExtension.swift in Sources */,
 				7280DCD223B208DE00EA4027 /* SignInViewController.swift in Sources */,
 				0B6B7F4523B0FF9D00F2B960 /* AppDelegate.swift in Sources */,

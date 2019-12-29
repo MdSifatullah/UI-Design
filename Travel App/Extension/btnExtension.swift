@@ -19,3 +19,26 @@ extension UIButton{
         
     }
 }
+
+extension UIView{
+    
+    func designView(borderWidth: CGFloat = 1, borderColor: UIColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)){
+        
+        layer.cornerRadius = frame.height / 2
+        clipsToBounds = true
+        layer.borderWidth = borderWidth
+        layer.borderColor = borderColor.cgColor
+        
+    }
+}
+extension UITextField{
+    
+    func designTextField(borderWidth: CGFloat = 1, borderColor: UIColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)){
+        
+        layer.cornerRadius = frame.height / 2
+        clipsToBounds = true
+        layer.borderWidth = borderWidth
+        layer.borderColor = borderColor.cgColor
+        
+    }
+}
